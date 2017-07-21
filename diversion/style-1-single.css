@@ -1,0 +1,6 @@
+.post-labels a:not(:first-child) {
+    margin: 0 0 0 20px;
+}
+.related-article,#comments {
+    box-shadow: 0 1px 2px 0 #b9b9b9;
+}

@@ -1,0 +1,58 @@
+.post-thumbnail {
+    width: 290px;
+    height: 218px;
+    overflow: hidden;
+    position: relative;
+    background: #dadfea;
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+article {
+    background: #fff;
+    overflow: hidden;
+    margin: 0 0 20px;
+    box-shadow: 0 1px 2px 0 #b9b9b9;
+}
+
+.entry-title {
+    margin: 0;
+    font: 700 1.3em 'Roboto Slab', Helvetica, Arial, sans-serif;
+}
+
+.entry-title a {
+    color: black;
+    text-decoration: none
+}
+
+.hfeed {
+    margin: 20px 0 0;
+}
+
+.ctn-wrap {
+    padding: 20px 20px 20px 5px;
+    overflow: hidden;
+}
+
+.post-labels a {
+    text-decoration: none;
+    display: inline-block;
+    background: #EF5350;
+    color: #fff;
+    padding: 6px 11px;
+}
+
+.post-header {
+    font-size: .8em;
+    margin: 12px 0;
+}
+
+.post-footer {
+    margin: 12px 0 0;
+    font-size: .9em;
+}
+
+.vcard .fn {
+    text-decoration: none;
+    color: #8c8c8c;
+}

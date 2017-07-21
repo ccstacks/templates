@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+    <ModulePrefs title="About Us" height='400'/>
+    <UserPref name="email" display_name="E-mail" datatype='list' required="false" default_value='admin@example.com' />
+    <UserPref name="phone" display_name="Phone Number" datatype='list' required="false" default_value='62-8XXXXXXXXXX|62-8XXXXXXXXXX' />
+    <UserPref name="address" display_name="Name" required="true" default_value='4986 Woodside Circle|Fort Walton Beach, FL 32547|United States' />
+    <Content type="html">
+        <![CDATA[
+    
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt magna eu purus porta tempor.
+            </p>
+            <dl class="addresses-info">
+                <div class="inf-item">
+                    <dt class="l-ico">
+                        <i aria-hidden="true" class="fa fa-envelope"></i>
+                        <span class="sr">e-mail address</span>
+                    </dt>
+                    <dd class="r-inf" id='email'>a
+                    </dd>
+                </div>
+                <div class="inf-item">
+                    <dt class="l-ico">
+                        <i aria-hidden="true" class="fa fa-phone"></i>
+                        <span class="sr">phone number</span>
+                    </dt>
+                    <dd class="r-inf" id='phone'>a
+                    </dd>
+                </div>
+                <div class="inf-item">
+                    <dt class="l-ico">
+                        <i aria-hidden="true" class="fa fa-home"></i>
+                        <span class="sr">address</span>
+                    </dt>
+                    <dd class="r-inf" id='address'>a
+                    </dd>
+                </div>
+            </dl>    
+    wadasdawdasdwdawdasdwdadwdawd
+            <script type="text/javascript">
+                var prefs = new gadgets.Prefs(),
+                    emails = prefs.getArray('email'),
+                    phones = prefs.getArray('phone'),
+                    addresses = prefs.getString('address');
+                    
+                var emails_c = document.getElementById('email'),
+                    phones_c = document.getElementById('phone'),
+                    addresses_c = document.getElementById('address');
+                    
+                var emails_p = '',
+                    phones_p = '',
+                    addresses_p = '';
+                    
+                for(i=0; i<emails.length; i++){
+                    emails_p += emails[i] + '<br>';
+                }
+                
+                for(i=0; i<phones.length; i++){
+                    phones_p += phones[i] + '<br>';
+                }
+
+                if(addresses.indexOf('|') > -1){
+                    var address_o = addresses.split('|');
+    
+                    for(i=0; i<address_o.length; i++){
+                        addresses_p += address_o[i] + '<br>';
+                    }
+                }
+/*
+                document.getElementById('email').innerHTML = emails_p;
+                document.getElementById('phone').innerHTML = phones_p;
+                document.getElementById('address').innerHTML = addresses_p;
+*/
+
+console.log(emails_p);
+console.log(phones_p);
+console.log(addresses_p);
+
+console.log(emails);
+console.log(phones);
+console.log(addresses);
+            </script>
+        ]]>
+    </Content>
+</Module>
