@@ -8,7 +8,7 @@
     margin: 0 15px 0 0;
 }
 
-article {
+article, .in-article-ad {
     background: #fff;
     overflow: hidden;
     margin: 0 0 20px;
