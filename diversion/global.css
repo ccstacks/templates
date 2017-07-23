@@ -126,13 +126,13 @@ h1.title {
     vertical-align: middle
 }
 
-#sidebar .widget {
+aside .widget {
     background: #fff;
     padding: 15px;
     margin: 20px 0;
 }
 
-#sidebar h2 {
+aside h2 {
     margin: 0px 0 15px;
     font: 700 1.35em 'Roboto Slab', Arial, Helvetica, sans-serif;
 }
@@ -148,7 +148,7 @@ h1.title {
     font-size: .95em;
 }
 
-#sidebar .popular-posts li {
+aside .popular-posts li {
     margin: 0 0 15px;
 }
 
