@@ -126,6 +126,11 @@ h1.title {
     vertical-align: middle
 }
 
+aside {
+    float: right;
+    width: 330px;
+}
+
 aside .widget {
     background: #fff;
     padding: 15px;
