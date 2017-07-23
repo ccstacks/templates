@@ -1,8 +1,23 @@
-          $(function () {
-              $('.sharing-section').stick_in_parent({
-                  offset_top: $('.l-men').outerHeight()+20
-              });
-          });
+  var content     = document.getElementsByClassName('content')[0];
+
+  function stick(_content, topMargin, parent){
+      if(window.scrollY + topMargin >= parent.offsetTop){
+          _content.setAttribute('style', 'position:fixed;top:' + topMargin + 'px');
+      }
+      if(window.scrollY + topMargin < parent.offsetTop){
+          if(_content.getAttribute('style')){
+              _content.removeAttribute('style');
+          }
+      }
+      if(window.scrollY + topMargin + _content.offsetHeight >= parent.offsetTop + parent.offsetHeight){
+          _content.setAttribute('style', 'position:absolute;top:' + (parent.offsetHeight) + 'px');
+      }
+  }
+
+  window.addEventListener('scroll', function(){
+      stick(document.getElementsByClassName('sharing-section')[0], document.getElementsByClassName('l-men')[0].outerHeight+20, document.getElementsByClassName('e-content')[0]);
+  });
+
 
 document.getElementsByClassName('momo')[0].setAttribute('style', 'height:' + document.getElementsByClassName('e-content')[0].offsetHeight + 'px')
 
