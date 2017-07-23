@@ -21,7 +21,7 @@ main {
     width: 850px
 }
 
-aside {
+f{
     float: left;
     width: 330px;
     margin: 0 0 0 20px
@@ -130,6 +130,7 @@ aside .widget {
     background: #fff;
     padding: 15px;
     margin: 20px 0;
+    box-shadow: 0 1px 2px 0 rgb(224, 224, 224)
 }
 
 aside h2 {
@@ -327,7 +328,7 @@ h1.title a:hover {
     background: #fff;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 1px 2px 0 #b9b9b9;
+    box-shadow: 0 1px 2px 0 rgb(224, 224, 224);
     margin: 0 0 20px;
 }
 
@@ -356,7 +357,7 @@ span#blog-pager-newer-link a,
     display: inline-block;
     width: 42px;
     text-align: center;
-    box-shadow: 0 1px 2px 0 #b9b9b9;
+    box-shadow: 0 1px 2px 0 rgb(224, 224, 224)
 }
 
 div#blog-pager a {
@@ -414,7 +415,7 @@ div#blog-pager {
     top: -1px;
     background: #fff;
     padding: 20px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 2px 0 rgb(224, 224, 224);
     transition-duration: .5s;
     transition-timing-function: cubic-bezier(0.83, -0.12, 0.17, 0.9);
     transform-origin: right top;
